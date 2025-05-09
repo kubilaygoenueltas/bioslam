@@ -29,7 +29,7 @@ int main(){
     VarStrToCharMap::clear(); // good idea to clear the variable map before running estimators
 
     // pull out IMUs from data
-    std::map<std::string,imu> ImuMap=imu::getImuMapFromDataFile(testutils::getTestDataFile("20170411-154746-Y1_TUG_6.h5"));
+    std::map<std::string,imu> ImuMap=imu::getImuMapFromDataFile(testutils::getTestDataFile("20170411-154746-Y1_TUG_6_edit.h5"));
     imu sacrumImu=ImuMap["Sacrum"], rightThighImu=ImuMap["Right Thigh"], rightShankImu=ImuMap["Right Tibia"], rightFootImu=ImuMap["Right Foot"], leftThighImu=ImuMap["Left Thigh"], leftShankImu=ImuMap["Left Tibia"], leftFootImu=ImuMap["Left Foot"];
 
     // setup and run individual imu pose problems
